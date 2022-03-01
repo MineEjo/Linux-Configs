@@ -58,6 +58,9 @@ nnoremap <silent> <Leader>gw :Git blame<CR>
 nnoremap <silent> <Leader>gr :Gread<CR>
 nnoremap <silent> <Leader>gl :Git log<CR>
 
+" Binds
+nnoremap <silent> <Leader>x  :x<CR>
+
 " TagbarToggle
 nmap <F8> :TagbarToggle<CR>
 

@@ -39,16 +39,16 @@ let g:NERDTreeDirArrowExpandable="▶"
 let g:NERDTreeDirArrowCollapsible="▼"
 let NERDTreeShowHidden=1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-                \ 'Modified'  :'',
-                \ 'Staged'    :'',
-                \ 'Untracked' :'',
-                \ 'Renamed'   :'',
-                \ 'Unmerged'  :'',
-                \ 'Deleted'   :'',
-                \ 'Dirty'     :'ﮮ',
-                \ 'Ignored'   :'',
-                \ 'Clean'     :'✔︎',
-                \ 'Unknown'   :'',
+                \ 'Modified'  :'',
+                \ 'Staged'    :'',
+                \ 'Untracked' :'',
+                \ 'Renamed'   :'',
+                \ 'Unmerged'  :'',
+                \ 'Deleted'   :'',
+                \ 'Dirty'     :'',
+                \ 'Ignored'   :'',
+                \ 'Clean'     :'',
+                \ 'Unknown'   :'',
                 \ }
 
 

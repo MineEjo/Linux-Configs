@@ -6,18 +6,6 @@
 configuration {
   font: "JetBrainsMOno Nerd Font 10";
 
-  drun {
-    display-name: "";
-  }
-
-  run {
-    display-name: "";
-  }
-
-  window {
-    display-name: "";
-  }
-
   timeout {
     delay: 10;
     action: "kb-cancel";
@@ -30,20 +18,19 @@ configuration {
   padding: 0;
   spacing: 0;
 
-  black: #21252B;
-  black-alt: #323840;
+  black: #282c3499;
   white: #abb2bf;
   blue: #61afef;
   red: #E06C75;
 
-  background-color: @black;
+
   text-color: @white;
 }
 
 window {
   location:   north west;
   anchor:   north west;
-  x-offset:   0px;        
+  x-offset:   0px;
   y-offset:   29px;
   width: 18%;
   height: 100%;
@@ -55,22 +42,12 @@ window {
 mainbox {
   border: 0;
   spacing: 0;
-  background-color: @black;
-  children: [inputbar, message, mode-switcher, listview];
-}
-
-message {
-  padding: 6px 10px;
-  background-color: @black-alt;
-}
-
-textbox {
-  text-color: @white;
-  background-color: @black-alt;
+  background-color: #00000000;
+  children: [inputbar, listview];
 }
 
 laistview {
-  background-color: @black;
+  background-color: #00000000;
   lines: 10;
   border: 0;
   outline: 0;
@@ -87,7 +64,7 @@ element {
 
 element-text {
   outline: 0;
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
   border: 0;
   padding: 5px;
@@ -97,67 +74,63 @@ element-text selected {
   outline: 0;
   border: 0 0 2px 0;
   border-color: @blue;
-  background-color: @black-alt;
+  background-color: #00000000;
   text-color: @blue;
 }
 
 element normal.normal {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element normal.urgent {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element normal.active {
-  background-color: @bblack;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element selected.normal {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element selected.urgent {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element selected.active {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element alternate.normal {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element alternate.urgent {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 element alternate.active {
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 scrollbar {
-  background-color: @black;
-  handle-color: @black-alt;
+  background-color: #00000000;
+  handle-color: @black;
   handle-width: 15px;
 }
 
-mode-switcher {
-  background-color: @black-alt;
-}
-
 button {
-  background-color: @black-alt;
+  background-color: #00000000;
   text-color: @white;
 }
 
@@ -166,24 +139,24 @@ button selected {
 }
 
 inputbar {
-  background-color: @black;
+  background-color: #00000000;
   spacing: 0px;
 }
 
 prompt {
   padding: 6px 9px;
-  background-color: @black;
+  background-color: #00000000;
   text-color: @white;
 }
 
 entry {
   padding: 6px 10px;
-  background-color: @black;
+  background-color: #00000000;
   text-color: @blue;
 }
 
 case-indicator {
   padding:6px 10px;
   text-color: @white;
-  background-color: @black;
+  background-color: #00000000;
 }

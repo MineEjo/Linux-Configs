@@ -19,7 +19,7 @@ configuration {
   spacing: 0;
 
   black: #282c3499;
-  white: #abb2bf;
+  white: #cad0db;
   blue: #61afef;
   red: #E06C75;
 

@@ -76,6 +76,9 @@ bindsym $mod+w          exec flameshot gui
 bindsym $mod+Return     exec i3-sensible-terminal
 bindsym $mod+q          kill
 
+# Ranger
+bindsym $mod+d          exec kitty ranger
+
 # Rofi
 bindsym $mod+Tab          exec rofi -show run
 

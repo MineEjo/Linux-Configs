@@ -6,14 +6,14 @@ set $mod Mod4
 
 # Dmenu
 set $scolor-black-alt    "#323840"
-set $scolor-black        "#21252B"
-set $scolor-white        "#abb2bf"
+set $scolor-black        "#282c34"
+set $scolor-white        "#cad0db"
 set $scolor-blue         "#61afef"
 
-set $color-black-alt     #323840
-set $color-black         #21252B
-set $color-white         #abb2bf
-set $color-blue          #61afef
+set $color-black-alt     #32384099
+set $color-black         #282c3499
+set $color-white         #cad0db
+set $color-blue          #61afef99
 
 # Workspaces
 set $ws1        "1"

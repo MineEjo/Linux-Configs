@@ -12,4 +12,4 @@ Files with settings for programs.
 ### Not required
 7. [Kitty](https://github.com/kovidgoyal/kitty)
 8. [NeoVim](https://github.com/neovim/neovim)
-9. [Nerd onts Symbols](https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols/)
+9. [Nerd fonts Symbols](https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols/)

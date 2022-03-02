@@ -22,15 +22,14 @@
 ;==========================================================
 
 [colors]
-black = #212528
-black-alt = #323840
-red = #E06C75
-green = #98c379
-yellow = #e5c87b
-blue = #61afef
-magenta = #c678dd
-cyan = #56b6c2
-white = #abb2bf
+black = #CC282c34
+red = #CCE06C75
+green = #CC98c379
+yellow = #CCe5c87b
+blue = #CC61afef
+magenta = #CCc678dd
+cyan = #CC56b6c2
+white = #CCabb2bf
 
 [gaps]
 padding = 2
@@ -73,7 +72,7 @@ blacklist-0 = num lock
 
 label-layout = %layout%
 label-layout-underline = ${colors.blue}
-label-layout-background = ${colors.black-alt}
+label-layout-background = ${colors.black}
 label-layout-padding = ${gaps.padding}
 
 label-indicator-padding = ${gaps.padding}
@@ -96,7 +95,7 @@ label-mode-background = ${colors.blue}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.black-alt}
+label-focused-background = ${colors.black}
 label-focused-underline= ${colors.blue}
 label-focused-padding = ${gaps.padding}
 
@@ -169,7 +168,7 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-underline = ${colors.black}
-format-background = ${colors.black-alt}
+format-background = ${colors.black}
 format-padding = ${gaps.padding}
 
 label = %date%%time%
@@ -182,14 +181,14 @@ format-volume-padding = ${gaps.padding}
 format-volume-margin = ${gaps.margin}
 format-volume-underline = ${colors.blue}
 format-volume-foreground = ${colors.white}
-format-volume-background = ${colors.black-alt}
+format-volume-background = ${colors.black}
 label-volume = 墳
 
 format-muted-padding = ${gaps.padding}
 format-muted-margin = ${gaps.margin}
 format-muted-underline = ${colors.red}
 format-muted-foreground = ${colors.white}
-format-muted-background = ${colors.black-alt}
+format-muted-background = ${colors.black}
 format-muted = <label-muted>
 label-muted = 婢
 

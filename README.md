@@ -10,6 +10,8 @@ Files with settings for programs.
 6. [Picom](https://github.com/yshui/picom)
 
 ### Not required
-7. [Kitty](https://github.com/kovidgoyal/kitty)
-8. [NeoVim](https://github.com/neovim/neovim)
-9. [Nerd Fonts Symbols](https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols/)
+1. Zsh
+2. [Oh My Zsh](https://ohmyz.sh/#install)
+3. [Kitty](https://github.com/kovidgoyal/kitty)
+4. [NeoVim](https://github.com/neovim/neovim)
+5. [Nerd Fonts Symbols](https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols/)

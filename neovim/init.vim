@@ -1,6 +1,6 @@
 " Theme: Atom One Dark
 " Author: MineEjo
-" RecommendedInstall: nodejs, npm, yarn, esbuild, ctags
+" RecommendedInstall: nodejs, npm, yarn, esbuild, ctags, python, python-pip
 
 :set number
 :set autoindent
@@ -30,7 +30,9 @@ Plug 'https://github.com/sheerun/vim-polyglot' " More highlighting
 Plug 'https://github.com/tpope/vim-fugitive' " Git wrapper
 Plug 'https://github.com/airblade/vim-gitgutter' " Git diff
 Plug 'https://github.com/ntpeters/vim-better-whitespace' " Whitespace highlighting
-Plug 'https://github.com/lukas-reineke/indent-blankline.nvim' " Indent Guides
+Plug 'https://github.com/lukas-reineke/indent-blankline.nvim' " Indent guides
+Plug 'https://github.com/vim-autoformat/vim-autoformat' " Autoformat
+Plug 'https://github.com/tmsvg/pear-tree' "Auto-pair
 
 set encoding=UTF-8
 
@@ -38,25 +40,24 @@ call plug#end()
 
 " NERDTree
 nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeTogle<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 let g:NERDTreeDirArrowExpandable='▶'
 let g:NERDTreeDirArrowCollapsible='▼'
 let NERDTreeShowHidden=1
 let g:NERDTreeGitStatusIndicatorMapCustom={
-            \ 'Modified'  :'',
-            \ 'Staged'    :'',
-            \ 'Untracked' :'',
-            \ 'Renamed'   :'',
-            \ 'Unmerged'  :'',
-            \ 'Deleted'   :'',
-            \ 'Dirty'     :'',
-            \ 'Ignored'   :'',
-            \ 'Clean'     :'',
-            \ 'Unknown'   :'',
-            \ }
+      \ 'Modified'  :'',
+      \ 'Staged'    :'',
+      \ 'Untracked' :'',
+      \ 'Renamed'   :'',
+      \ 'Unmerged'  :'',
+      \ 'Deleted'   :'',
+      \ 'Dirty'     :'',
+      \ 'Ignored'   :'',
+      \ 'Clean'     :'',
+      \ 'Unknown'   :'',
+      \ }
 
 " Git
 nnoremap <silent> <Leader>gs :Git<CR>
@@ -67,7 +68,7 @@ nnoremap <silent> <Leader>gl :Git log<CR>
 " Binds
 hi IndentGuidesEven ctermbg=blue
 nnoremap <silent> <Leader>x :x<CR>
-nnoremap <silent> <C-s> gg=G<CR> :w<CR>
+nnoremap <silent> <C-s> :Autoformat<CR> :w<CR>
 map <silent> <Leader>y "*y<CR>
 map <silent> <Leader>p "*p<CR>
 
@@ -76,12 +77,12 @@ nnoremap <silent> <F8> :TagbarToggle<CR>
 
 " Theme
 if (empty($TMUX))
-    if (has("nvim"))
-        let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    endif
-    if (has("termguicolors"))
-        set termguicolors
-    endif
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
 endif
 
 " Other Colors Variables
@@ -98,10 +99,15 @@ let yellow_color='#e5c07b'
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins
 "
+" :CocInstall coc-tsserver coc-html coc-eslint coc-json coc-css
 " :CocInstall coc-python
 " :CocInstall coc-clangd
 " :CocInstall coc-snippets
 " :CocCommand snippets.edit... FOR EACH FILE TYPE
+
+" Autoformat
+" python3 -m pip install pynvim
+let g:python3_host_prog="/path/to/python/executable/"
 
 " Visual whitespacea
 let g:better_whitespace_enabled=1
@@ -112,7 +118,7 @@ let g:better_whitespace_filetypes_blacklist = ['<filetype1>', '<filetype2>', '<e
 let g:airline_powerline_fonts=1
 
 if !exists('g:airline_symbols')
-    let g:airline_symbols={}
+  let g:airline_symbols={}
 endif
 
 " Airline symbols

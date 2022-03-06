@@ -8,6 +8,7 @@ Files with settings for programs.
 4. [Polybar](https://github.com/Airblader/i3)
 5. [Nitrogen](https://github.com/l3ib/nitrogen)
 6. [Picom](https://github.com/yshui/picom)
+7. [Ranger](https://github.com/ranger/ranger)
 
 ### Not required
 1. Zsh

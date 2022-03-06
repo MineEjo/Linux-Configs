@@ -9,10 +9,10 @@ Files with settings for programs.
 5. [Nitrogen](https://github.com/l3ib/nitrogen)
 6. [Picom](https://github.com/yshui/picom)
 7. [Ranger](https://github.com/ranger/ranger)
+8. [Kitty](https://github.com/kovidgoyal/kitty)
+9. [NeoVim](https://github.com/neovim/neovim)
+10. [Nerd Fonts Symbols](https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols/)
 
 ### Not required
 1. Zsh
 2. [Oh My Zsh](https://ohmyz.sh/#install)
-3. [Kitty](https://github.com/kovidgoyal/kitty)
-4. [NeoVim](https://github.com/neovim/neovim)
-5. [Nerd Fonts Symbols](https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols/)

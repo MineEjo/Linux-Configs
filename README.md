@@ -1,4 +1,4 @@
-# Configs
+# Linux-Configs
 Files with settings for programs.
 
 ### Required
